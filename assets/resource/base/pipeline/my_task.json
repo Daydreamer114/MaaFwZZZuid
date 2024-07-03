@@ -1,7 +1,7 @@
 {
     "StartApp": {
         "action": "StartApp",
-        "package": "com.mihoyo.zzz",
+        "package": "com.miHoYo.Nap/com.mihoyo.combosdk.ComboSDKActivity",
         "next": [
             "ClickStart"
         ],
@@ -13,12 +13,12 @@
     "ClickStart": {
         "recognition": "TemplateMatch",
         "roi": [
-            900,
-            500,
-            100,
-            50
+            1168,
+            336,
+            60,
+            55
         ],
-        "template": "ScanQRCode.png",
+        "template": "ScanQRCode_1168_336_59_54__1118_286_159_154.png",
         "threshold": 0.9,
         "action": "Click",
         "target": [
@@ -40,12 +40,12 @@
     "ClickCancle": {
         "recognition": "TemplateMatch",
         "roi": [
-            900,
-            500,
-            100,
-            50
+            397,
+            421,
+            54,
+            59
         ],
-        "template": "Cancle.png",
+        "template": "Cancle_397_421_53_58__347_371_153_158.png",
         "threshold": 0.9,
         "action": "Click",
         "next": [
@@ -60,12 +60,12 @@
     "ClickConfirm": {
         "recognition": "TemplateMatch",
         "roi": [
-            900,
-            500,
-            100,
-            50
+            523,
+            408,
+            57,
+            52
         ],
-        "template": "Confirm.png",
+        "template": "Confirm_523_408_56_51__473_358_156_151.png",
         "threshold": 0.9,
         "next": [
             "StopApp"
@@ -73,7 +73,7 @@
     },
     "StopApp": {
         "action": "StopApp",
-        "package": "com.mihoyo.zzz",
+        "package": "com.miHoYo.Nap",
         "post_delay": 2000,
         "next": [
             "StartApp"
