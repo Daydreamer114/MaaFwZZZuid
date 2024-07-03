@@ -1,17 +1,72 @@
 {
     "StartApp": {
-
+        "recognition": "DirectHit",
+        "action": "StartApp",
+        "package": "com.mihoyo.zzz",
+        "next": [
+            "ClickStart"
+        ],
+        "timeout": 20000,
+        "timeout_next": [
+            "StartApp"
+        ]
     },
     "ClickStart": {
-
+        "recognition": "TemplateMatch",
+        "roi": [
+            900,
+            500,
+            100,
+            50
+        ],
+        "template": "ScanQRCode.png",
+        "action": "Click",
+        "target": [
+            960,
+            540,
+            0,
+            0
+        ],
+        "next": [
+            "ClickCancle",
+            "ClickConfirm",
+            "ClickStart"
+        ]
     },
     "ClickCancle": {
-
+        "recognition": "TemplateMatch",
+        "roi": [
+            900,
+            500,
+            100,
+            50
+        ],
+        "template": "Cancle.png",
+        "action": "Click",
+        "next": [
+            "ClickStart",
+            "ClickCancle"
+        ]
     },
     "ClickConfirm": {
-
+        "recognition": "TemplateMatch",
+        "roi": [
+            900,
+            500,
+            100,
+            50
+        ],
+        "template": "Confirm.png",
+        "next": [
+            "StopApp"
+        ]
     },
     "StopApp": {
-
+        "action": "StopApp",
+        "package": "com.mihoyo.zzz",
+        "post_delay": 2000,
+        "next": [
+            "StartApp"
+        ]
     }
 }
