@@ -1,6 +1,5 @@
 {
     "StartApp": {
-        "recognition": "DirectHit",
         "action": "StartApp",
         "package": "com.mihoyo.zzz",
         "next": [
@@ -20,6 +19,7 @@
             50
         ],
         "template": "ScanQRCode.png",
+        "threshold": 0.9,
         "action": "Click",
         "target": [
             960,
@@ -31,6 +31,10 @@
             "ClickCancle",
             "ClickConfirm",
             "ClickStart"
+        ],
+        "timeout": 20000,
+        "timeout_next": [
+            "StopApp"
         ]
     },
     "ClickCancle": {
@@ -42,10 +46,15 @@
             50
         ],
         "template": "Cancle.png",
+        "threshold": 0.9,
         "action": "Click",
         "next": [
             "ClickStart",
             "ClickCancle"
+        ],
+        "timeout": 20000,
+        "timeout_next": [
+            "StopApp"
         ]
     },
     "ClickConfirm": {
@@ -57,6 +66,7 @@
             50
         ],
         "template": "Confirm.png",
+        "threshold": 0.9,
         "next": [
             "StopApp"
         ]
