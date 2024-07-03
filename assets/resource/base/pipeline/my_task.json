@@ -11,6 +11,7 @@
         ]
     },
     "ClickStart": {
+        "pre_delay":3750,
         "recognition": "TemplateMatch",
         "roi": [
             1168,
@@ -38,6 +39,7 @@
         ]
     },
     "ClickCancle": {
+        "pre_delay":3750,
         "recognition": "TemplateMatch",
         "roi": [
             397,
